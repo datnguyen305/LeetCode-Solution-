@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int,int> Numwithkeys;
+        for (int i = 0 ; i < nums.size(); i++)
+        {
+           int remainder = target - nums[i];
+           if (Numwithkeys.find(remainder) != Numwithkeys.end())
+           {
+                return {Numwithkeys[remainder], i};
+           }
+           Numwithkeys[nums[i]] = i;
+        }
+        return {};
+    }
+};
