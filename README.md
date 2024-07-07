@@ -1,1 +1,1 @@
-Every (maybe) solutions for Leetcode's problems
+Solutions for every (maybe) Leetcode's problems
